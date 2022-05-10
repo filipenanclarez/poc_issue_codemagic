@@ -50,7 +50,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  static const String MY_VAR = String.fromEnvironment('MY_VAR');
+  static const String envFireApiKey = String.fromEnvironment('envFireApiKey');
 
   void _incrementCounter() {
     setState(() {
@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              '--dart-define MY_VAR value: $MY_VAR',
+              '--dart-define MY_VAR value: $envFireApiKey',
             ),
             const Text(
               'You have pushed the button this many times:',
