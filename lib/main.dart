@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -51,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   static const String envFireApiKey = String.fromEnvironment('envFireApiKey');
+  String FireApiKey = Utf8Codec().decode(base64Decode(envFireApiKey));
 
   void _incrementCounter() {
     setState(() {
@@ -97,8 +100,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              '--dart-define MY_VAR value: $envFireApiKey',
+            Text(
+              '--dart-define FireApiKey value: $FireApiKey',
             ),
             const Text(
               'You have pushed the button this many times:',
