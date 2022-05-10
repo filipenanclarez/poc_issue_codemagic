@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/poc_issue_codemagic.iml" filepath="$PROJECT_DIR$/poc_issue_codemagic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/poc_issue_codemagic_android.iml" filepath="$PROJECT_DIR$/android/poc_issue_codemagic_android.iml" />
+    </modules>
+  </component>
+</project>
